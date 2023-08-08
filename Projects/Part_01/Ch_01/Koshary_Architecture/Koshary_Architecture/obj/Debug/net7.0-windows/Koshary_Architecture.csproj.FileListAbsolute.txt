@@ -1,0 +1,17 @@
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\bin\Debug\net7.0-windows\Koshary_Architecture.exe
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\bin\Debug\net7.0-windows\Koshary_Architecture.deps.json
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\bin\Debug\net7.0-windows\Koshary_Architecture.runtimeconfig.json
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\bin\Debug\net7.0-windows\Koshary_Architecture.dll
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\bin\Debug\net7.0-windows\Koshary_Architecture.pdb
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\obj\Debug\net7.0-windows\Koshary_Architecture.csproj.AssemblyReference.cache
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\obj\Debug\net7.0-windows\Koshary_Architecture.AddNewEmployeeByManagerForm.resources
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\obj\Debug\net7.0-windows\Koshary_Architecture.csproj.GenerateResource.cache
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\obj\Debug\net7.0-windows\Koshary_Architecture.GeneratedMSBuildEditorConfig.editorconfig
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\obj\Debug\net7.0-windows\Koshary_Architecture.AssemblyInfoInputs.cache
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\obj\Debug\net7.0-windows\Koshary_Architecture.AssemblyInfo.cs
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\obj\Debug\net7.0-windows\Koshary_Architecture.csproj.CoreCompileInputs.cache
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\obj\Debug\net7.0-windows\Koshary_Architecture.dll
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\obj\Debug\net7.0-windows\refint\Koshary_Architecture.dll
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\obj\Debug\net7.0-windows\Koshary_Architecture.pdb
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\obj\Debug\net7.0-windows\Koshary_Architecture.genruntimeconfig.cache
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\obj\Debug\net7.0-windows\ref\Koshary_Architecture.dll
