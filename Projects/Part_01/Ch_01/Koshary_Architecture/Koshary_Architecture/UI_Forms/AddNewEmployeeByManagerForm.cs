@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Net.Mail;
 using System.Net;
 using System.Text.RegularExpressions;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Koshary_Architecture
 {
@@ -12,6 +13,7 @@ namespace Koshary_Architecture
         List<string> Errors = new List<string>();
         EmployeesSqlServerDatabaseContext SqlServerDatabaseContext = new EmployeesSqlServerDatabaseContext();
         Employee NewEmployee = new Employee();
+
         public AddNewEmployeeByManagerForm()
         {
             InitializeComponent();
@@ -19,12 +21,12 @@ namespace Koshary_Architecture
 
         private void AddNewEmployeeButton_Click(object sender, EventArgs e)
         {
+            InitUiConfiguration();
+
             CheckIfEmployeeAgeIsEqualOrGreaterThan21Years();
             CheckIfEmailHasCorrectFormat();
             CheckIfEmployeePhoneNumberIsUnique();
             CheckIfEmployeeHasAtLeastOneSkill();
-
-            ConfigMessageLabels();
 
             if (Errors.Count > 0)
             {
@@ -39,17 +41,6 @@ namespace Koshary_Architecture
             }
         }
 
-        private void CheckIfEmployeePhoneNumberIsUnique()
-        {
-            bool isExist = SqlServerDatabaseContext
-                           .Employees
-                           .Where(e => e.PhoneNumber == EmployeePhoneNumberTextBox.Text)
-                           .Any();
-            if (isExist)
-            {
-                Errors.Add("Phone number is already exist , please enter unique phone number. ");
-            }
-        }
 
         private void CheckIfEmployeeAgeIsEqualOrGreaterThan21Years()
         {
@@ -57,7 +48,7 @@ namespace Koshary_Architecture
             var age = today.Year - EmployeeBirthDatePickerBox.Value.Year;
             if (age < 21)
             {
-                Errors.Add("Employee Age Must be Equal Or Greater Than 21 Years.");
+                Errors.Add("Employee age should be equal or greater than 21 years.");
             }
         }
 
@@ -74,11 +65,28 @@ namespace Koshary_Architecture
 
         }
 
+        private void CheckIfEmployeePhoneNumberIsUnique()
+        {
+            if (string.IsNullOrEmpty(EmployeePhoneNumberTextBox.Text))
+            {
+                Errors.Add("Phone number is required. ");
+            }
+
+            bool isExist = SqlServerDatabaseContext
+                           .Employees
+                           .Where(e => e.PhoneNumber == EmployeePhoneNumberTextBox.Text)
+                           .Any();
+            if (isExist)
+            {
+                Errors.Add("Phone number is already exist , please enter unique phone number. ");
+            }
+        }
+
         private void CheckIfEmployeeHasAtLeastOneSkill()
         {
             if (string.IsNullOrWhiteSpace(EmployeeSkillTextBox_1.Text))
             {
-                Errors.Add("Employee must has at least one skill , " +
+                Errors.Add("Employee should has at least one skill , " +
                            "please ensure the skill is entered on the first cell. ");
             }
         }
@@ -154,11 +162,15 @@ namespace Koshary_Architecture
             ErrorsMessageLabel.Visible = true;
         }
 
-        private void ConfigMessageLabels()
+        private void InitUiConfiguration()
         {
-            SuccessMessageLabel.Text = "";
+            Errors = new List<string>();
+
+            NewEmployee = new Employee();
+
+            SuccessMessageLabel.Text = string.Empty;
             SuccessMessageLabel.Visible = false;
-            ErrorsMessageLabel.Text = "";
+            ErrorsMessageLabel.Text = string.Empty;
             ErrorsMessageLabel.Visible = false;
         }
 
