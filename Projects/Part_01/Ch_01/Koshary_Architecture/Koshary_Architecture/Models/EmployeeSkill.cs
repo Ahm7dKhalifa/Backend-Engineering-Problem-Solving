@@ -10,6 +10,6 @@ namespace Koshary_Architecture.Models
     {
         public long Id { get; set; }
         public long EmployeeId { get; set; }
-        public string SkillName { get; set; }
+        public string? SkillName { get; set; }
     }
 }

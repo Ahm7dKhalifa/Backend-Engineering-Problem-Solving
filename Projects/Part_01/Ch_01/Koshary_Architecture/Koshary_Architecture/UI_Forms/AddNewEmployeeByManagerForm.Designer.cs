@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             EmployeeNameTextBox = new TextBox();
-            EmployeeBirthdatePicker = new DateTimePicker();
+            EmployeeBirthDatePickerBox = new DateTimePicker();
             CountryTextBox = new TextBox();
             CityTextBox = new TextBox();
             EmployeeStreetAndBuildingNumberTextBox = new TextBox();
@@ -56,6 +56,9 @@
             EmployeeSkill_4_Label = new Label();
             EmployeeSkill_5_Label = new Label();
             EmployeeSkill_6_Label = new Label();
+            AddNewEmployeeButton = new Button();
+            SuccessMessageLabel = new Label();
+            ErrorsMessageLabel = new Label();
             SuspendLayout();
             // 
             // EmployeeNameTextBox
@@ -65,12 +68,12 @@
             EmployeeNameTextBox.Size = new Size(482, 31);
             EmployeeNameTextBox.TabIndex = 0;
             // 
-            // EmployeeBirthdatePicker
+            // EmployeeBirthDatePickerBox
             // 
-            EmployeeBirthdatePicker.Location = new Point(709, 92);
-            EmployeeBirthdatePicker.Name = "EmployeeBirthdatePicker";
-            EmployeeBirthdatePicker.Size = new Size(454, 31);
-            EmployeeBirthdatePicker.TabIndex = 1;
+            EmployeeBirthDatePickerBox.Location = new Point(709, 92);
+            EmployeeBirthDatePickerBox.Name = "EmployeeBirthDatePickerBox";
+            EmployeeBirthDatePickerBox.Size = new Size(454, 31);
+            EmployeeBirthDatePickerBox.TabIndex = 1;
             // 
             // CountryTextBox
             // 
@@ -109,42 +112,42 @@
             // 
             // EmployeeSkillTextBox_1
             // 
-            EmployeeSkillTextBox_1.Location = new Point(317, 393);
+            EmployeeSkillTextBox_1.Location = new Point(317, 354);
             EmployeeSkillTextBox_1.Name = "EmployeeSkillTextBox_1";
             EmployeeSkillTextBox_1.Size = new Size(294, 31);
             EmployeeSkillTextBox_1.TabIndex = 7;
             // 
             // EmployeeSkillTextBox_2
             // 
-            EmployeeSkillTextBox_2.Location = new Point(648, 393);
+            EmployeeSkillTextBox_2.Location = new Point(648, 354);
             EmployeeSkillTextBox_2.Name = "EmployeeSkillTextBox_2";
             EmployeeSkillTextBox_2.Size = new Size(266, 31);
             EmployeeSkillTextBox_2.TabIndex = 8;
             // 
             // EmployeeSkillTextBox_3
             // 
-            EmployeeSkillTextBox_3.Location = new Point(956, 393);
+            EmployeeSkillTextBox_3.Location = new Point(956, 354);
             EmployeeSkillTextBox_3.Name = "EmployeeSkillTextBox_3";
             EmployeeSkillTextBox_3.Size = new Size(266, 31);
             EmployeeSkillTextBox_3.TabIndex = 9;
             // 
             // EmployeeSkillTextBox_4
             // 
-            EmployeeSkillTextBox_4.Location = new Point(317, 476);
+            EmployeeSkillTextBox_4.Location = new Point(317, 437);
             EmployeeSkillTextBox_4.Name = "EmployeeSkillTextBox_4";
             EmployeeSkillTextBox_4.Size = new Size(294, 31);
             EmployeeSkillTextBox_4.TabIndex = 10;
             // 
             // EmployeeSkillTextBox_5
             // 
-            EmployeeSkillTextBox_5.Location = new Point(648, 476);
+            EmployeeSkillTextBox_5.Location = new Point(648, 437);
             EmployeeSkillTextBox_5.Name = "EmployeeSkillTextBox_5";
             EmployeeSkillTextBox_5.Size = new Size(266, 31);
             EmployeeSkillTextBox_5.TabIndex = 11;
             // 
             // EmployeeSkillTextBox_6
             // 
-            EmployeeSkillTextBox_6.Location = new Point(956, 476);
+            EmployeeSkillTextBox_6.Location = new Point(956, 437);
             EmployeeSkillTextBox_6.Name = "EmployeeSkillTextBox_6";
             EmployeeSkillTextBox_6.Size = new Size(266, 31);
             EmployeeSkillTextBox_6.TabIndex = 12;
@@ -224,7 +227,7 @@
             // EmployeeSkillsLabel
             // 
             EmployeeSkillsLabel.AutoSize = true;
-            EmployeeSkillsLabel.Location = new Point(137, 399);
+            EmployeeSkillsLabel.Location = new Point(137, 360);
             EmployeeSkillsLabel.Name = "EmployeeSkillsLabel";
             EmployeeSkillsLabel.Size = new Size(143, 25);
             EmployeeSkillsLabel.TabIndex = 21;
@@ -233,16 +236,17 @@
             // EmployeeSkill_1_Label
             // 
             EmployeeSkill_1_Label.AutoSize = true;
-            EmployeeSkill_1_Label.Location = new Point(317, 368);
+            EmployeeSkill_1_Label.ForeColor = Color.Red;
+            EmployeeSkill_1_Label.Location = new Point(317, 329);
             EmployeeSkill_1_Label.Name = "EmployeeSkill_1_Label";
-            EmployeeSkill_1_Label.Size = new Size(58, 25);
+            EmployeeSkill_1_Label.Size = new Size(71, 25);
             EmployeeSkill_1_Label.TabIndex = 22;
-            EmployeeSkill_1_Label.Text = "Skill 1";
+            EmployeeSkill_1_Label.Text = "Skill 1 *";
             // 
             // EmployeeSkill_2_Label
             // 
             EmployeeSkill_2_Label.AutoSize = true;
-            EmployeeSkill_2_Label.Location = new Point(648, 365);
+            EmployeeSkill_2_Label.Location = new Point(648, 326);
             EmployeeSkill_2_Label.Name = "EmployeeSkill_2_Label";
             EmployeeSkill_2_Label.Size = new Size(58, 25);
             EmployeeSkill_2_Label.TabIndex = 23;
@@ -251,7 +255,7 @@
             // EmployeeSkill_3_Label
             // 
             EmployeeSkill_3_Label.AutoSize = true;
-            EmployeeSkill_3_Label.Location = new Point(956, 365);
+            EmployeeSkill_3_Label.Location = new Point(956, 326);
             EmployeeSkill_3_Label.Name = "EmployeeSkill_3_Label";
             EmployeeSkill_3_Label.Size = new Size(58, 25);
             EmployeeSkill_3_Label.TabIndex = 24;
@@ -260,7 +264,7 @@
             // EmployeeSkill_4_Label
             // 
             EmployeeSkill_4_Label.AutoSize = true;
-            EmployeeSkill_4_Label.Location = new Point(317, 448);
+            EmployeeSkill_4_Label.Location = new Point(317, 409);
             EmployeeSkill_4_Label.Name = "EmployeeSkill_4_Label";
             EmployeeSkill_4_Label.Size = new Size(58, 25);
             EmployeeSkill_4_Label.TabIndex = 25;
@@ -269,7 +273,7 @@
             // EmployeeSkill_5_Label
             // 
             EmployeeSkill_5_Label.AutoSize = true;
-            EmployeeSkill_5_Label.Location = new Point(648, 448);
+            EmployeeSkill_5_Label.Location = new Point(648, 409);
             EmployeeSkill_5_Label.Name = "EmployeeSkill_5_Label";
             EmployeeSkill_5_Label.Size = new Size(58, 25);
             EmployeeSkill_5_Label.TabIndex = 26;
@@ -278,17 +282,52 @@
             // EmployeeSkill_6_Label
             // 
             EmployeeSkill_6_Label.AutoSize = true;
-            EmployeeSkill_6_Label.Location = new Point(956, 448);
+            EmployeeSkill_6_Label.Location = new Point(956, 409);
             EmployeeSkill_6_Label.Name = "EmployeeSkill_6_Label";
             EmployeeSkill_6_Label.Size = new Size(58, 25);
             EmployeeSkill_6_Label.TabIndex = 27;
             EmployeeSkill_6_Label.Text = "Skill 6";
             // 
+            // AddNewEmployeeButton
+            // 
+            AddNewEmployeeButton.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            AddNewEmployeeButton.ForeColor = Color.FromArgb(0, 0, 192);
+            AddNewEmployeeButton.Location = new Point(137, 492);
+            AddNewEmployeeButton.Name = "AddNewEmployeeButton";
+            AddNewEmployeeButton.Size = new Size(339, 54);
+            AddNewEmployeeButton.TabIndex = 28;
+            AddNewEmployeeButton.Text = "Add New Employee";
+            AddNewEmployeeButton.UseVisualStyleBackColor = true;
+            AddNewEmployeeButton.Click += AddNewEmployeeButton_Click;
+            // 
+            // SuccessMessageLabel
+            // 
+            SuccessMessageLabel.AutoSize = true;
+            SuccessMessageLabel.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            SuccessMessageLabel.ForeColor = Color.FromArgb(0, 192, 0);
+            SuccessMessageLabel.Location = new Point(131, 563);
+            SuccessMessageLabel.Name = "SuccessMessageLabel";
+            SuccessMessageLabel.Size = new Size(0, 45);
+            SuccessMessageLabel.TabIndex = 29;
+            // 
+            // ErrorsMessageLabel
+            // 
+            ErrorsMessageLabel.AutoSize = true;
+            ErrorsMessageLabel.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            ErrorsMessageLabel.ForeColor = Color.FromArgb(192, 0, 0);
+            ErrorsMessageLabel.Location = new Point(137, 562);
+            ErrorsMessageLabel.Name = "ErrorsMessageLabel";
+            ErrorsMessageLabel.Size = new Size(0, 38);
+            ErrorsMessageLabel.TabIndex = 30;
+            // 
             // AddNewEmployeeByManagerForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1385, 673);
+            ClientSize = new Size(1340, 741);
+            Controls.Add(ErrorsMessageLabel);
+            Controls.Add(SuccessMessageLabel);
+            Controls.Add(AddNewEmployeeButton);
             Controls.Add(EmployeeSkill_6_Label);
             Controls.Add(EmployeeSkill_5_Label);
             Controls.Add(EmployeeSkill_4_Label);
@@ -315,7 +354,7 @@
             Controls.Add(EmployeeStreetAndBuildingNumberTextBox);
             Controls.Add(CityTextBox);
             Controls.Add(CountryTextBox);
-            Controls.Add(EmployeeBirthdatePicker);
+            Controls.Add(EmployeeBirthDatePickerBox);
             Controls.Add(EmployeeNameTextBox);
             Name = "AddNewEmployeeByManagerForm";
             Text = "Form1";
@@ -326,7 +365,7 @@
         #endregion
 
         private TextBox EmployeeNameTextBox;
-        private DateTimePicker EmployeeBirthdatePicker;
+        private DateTimePicker EmployeeBirthDatePickerBox;
         private TextBox CountryTextBox;
         private TextBox CityTextBox;
         private TextBox EmployeeStreetAndBuildingNumberTextBox;
@@ -353,5 +392,8 @@
         private Label EmployeeSkill_4_Label;
         private Label EmployeeSkill_5_Label;
         private Label EmployeeSkill_6_Label;
+        private Button AddNewEmployeeButton;
+        private Label SuccessMessageLabel;
+        private Label ErrorsMessageLabel;
     }
 }
