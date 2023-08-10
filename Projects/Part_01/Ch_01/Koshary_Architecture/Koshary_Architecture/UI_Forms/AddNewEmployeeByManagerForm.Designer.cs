@@ -357,7 +357,7 @@
             Controls.Add(EmployeeBirthDatePickerBox);
             Controls.Add(EmployeeNameTextBox);
             Name = "AddNewEmployeeByManagerForm";
-            Text = "Form1";
+            Text = "Add New Employee By Manager Screen";
             ResumeLayout(false);
             PerformLayout();
         }

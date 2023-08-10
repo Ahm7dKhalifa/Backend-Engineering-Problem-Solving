@@ -10,22 +10,22 @@ namespace Koshary_Architecture
 {
     public partial class AddNewEmployeeByManagerForm : Form
     {
+        #region Properties
         List<string> Errors = new List<string>();
         EmployeesSqlServerDatabaseContext SqlServerDatabaseContext = new EmployeesSqlServerDatabaseContext();
         Employee NewEmployee = new Employee();
-
+        #endregion
         public AddNewEmployeeByManagerForm()
         {
             InitializeComponent();
         }
-
         private void AddNewEmployeeButton_Click(object sender, EventArgs e)
         {
             InitUiConfiguration();
 
             CheckIfEmployeeAgeIsEqualOrGreaterThan21Years();
             CheckIfEmailHasCorrectFormat();
-            CheckIfEmployeePhoneNumberIsUnique();
+            CheckIfEmployeePhoneNumberIsRequiredAndUnique();
             CheckIfEmployeeHasAtLeastOneSkill();
 
             if (Errors.Count > 0)
@@ -65,7 +65,7 @@ namespace Koshary_Architecture
 
         }
 
-        private void CheckIfEmployeePhoneNumberIsUnique()
+        private void CheckIfEmployeePhoneNumberIsRequiredAndUnique()
         {
             if (string.IsNullOrEmpty(EmployeePhoneNumberTextBox.Text))
             {
@@ -147,7 +147,7 @@ namespace Koshary_Architecture
 
         private void DisplaySuccessMessage()
         {
-            SuccessMessageLabel.Text = NewEmployee.Name + " is created successfuly :)";
+            SuccessMessageLabel.Text = "Employee " + NewEmployee.Name + " is added successfuly :)";
             SuccessMessageLabel.Visible = true;
         }
 
