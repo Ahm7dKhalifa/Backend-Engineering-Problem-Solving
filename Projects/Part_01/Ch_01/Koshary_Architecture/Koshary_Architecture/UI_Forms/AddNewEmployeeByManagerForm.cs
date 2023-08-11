@@ -41,6 +41,17 @@ namespace Koshary_Architecture
             }
         }
 
+        private void InitUiConfiguration()
+        {
+            Errors = new List<string>();
+
+            NewEmployee = new Employee();
+
+            SuccessMessageLabel.Text = string.Empty;
+            SuccessMessageLabel.Visible = false;
+            ErrorsMessageLabel.Text = string.Empty;
+            ErrorsMessageLabel.Visible = false;
+        }
 
         private void CheckIfEmployeeAgeIsEqualOrGreaterThan21Years()
         {
@@ -72,15 +83,16 @@ namespace Koshary_Architecture
                 Errors.Add("Phone number is required. ");
             }
 
-            bool isExist = SqlServerDatabaseContext
+            bool isPhoneNumberExist = SqlServerDatabaseContext
                            .Employees
                            .Where(e => e.PhoneNumber == EmployeePhoneNumberTextBox.Text)
                            .Any();
-            if (isExist)
+            if (isPhoneNumberExist)
             {
                 Errors.Add("Phone number is already exist , please enter unique phone number. ");
             }
         }
+
 
         private void CheckIfEmployeeHasAtLeastOneSkill()
         {
@@ -126,6 +138,8 @@ namespace Koshary_Architecture
 
         private void SendEmailNotificationToAdmin()
         {
+            Console.WriteLine("Email is sent ...");
+            Console.WriteLine("you can uncomment the code below to send actual email ");
             /*
             https://www.c-sharpcorner.com/article/sending-email-using-c-sharp/
             MailMessage message = new MailMessage();
@@ -145,6 +159,7 @@ namespace Koshary_Architecture
             */
         }
 
+
         private void DisplaySuccessMessage()
         {
             SuccessMessageLabel.Text = "Employee " + NewEmployee.Name + " is added successfuly :)";
@@ -162,18 +177,6 @@ namespace Koshary_Architecture
             ErrorsMessageLabel.Visible = true;
         }
 
-        private void InitUiConfiguration()
-        {
-            Errors = new List<string>();
-
-            NewEmployee = new Employee();
-
-            SuccessMessageLabel.Text = string.Empty;
-            SuccessMessageLabel.Visible = false;
-            ErrorsMessageLabel.Text = string.Empty;
-            ErrorsMessageLabel.Visible = false;
-        }
-
-
     }
 }
+
