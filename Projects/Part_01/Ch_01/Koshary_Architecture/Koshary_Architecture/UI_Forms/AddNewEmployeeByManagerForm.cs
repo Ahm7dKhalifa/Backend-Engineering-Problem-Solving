@@ -83,10 +83,10 @@ namespace Koshary_Architecture
                 Errors.Add("Phone number is required. ");
             }
 
-            bool isPhoneNumberExist = SqlServerDatabaseContext
-                           .Employees
-                           .Where(e => e.PhoneNumber == EmployeePhoneNumberTextBox.Text)
-                           .Any();
+            bool isPhoneNumberExist =  SqlServerDatabaseContext
+                                       .Employees
+                                       .Where(e => e.PhoneNumber == EmployeePhoneNumberTextBox.Text)
+                                       .Any();
             if (isPhoneNumberExist)
             {
                 Errors.Add("Phone number is already exist , please enter unique phone number. ");
