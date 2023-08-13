@@ -4,5 +4,8 @@
     <Compile Update="UI_Forms\AddNewEmployeeByManagerForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UI_Forms\AddNewEmployeeByManagerForm_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

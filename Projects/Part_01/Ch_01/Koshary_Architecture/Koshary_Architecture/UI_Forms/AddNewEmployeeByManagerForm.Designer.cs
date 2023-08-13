@@ -59,6 +59,7 @@
             AddNewEmployeeButton = new Button();
             SuccessMessageLabel = new Label();
             ErrorsMessageLabel = new Label();
+            GoToNextExampleButton = new Button();
             SuspendLayout();
             // 
             // EmployeeNameTextBox
@@ -320,11 +321,24 @@
             ErrorsMessageLabel.Size = new Size(0, 38);
             ErrorsMessageLabel.TabIndex = 30;
             // 
+            // GoToNextExampleButton
+            // 
+            GoToNextExampleButton.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            GoToNextExampleButton.ForeColor = Color.FromArgb(192, 0, 0);
+            GoToNextExampleButton.Location = new Point(933, 498);
+            GoToNextExampleButton.Name = "GoToNextExampleButton";
+            GoToNextExampleButton.Size = new Size(364, 54);
+            GoToNextExampleButton.TabIndex = 31;
+            GoToNextExampleButton.Text = "Go to Next Example";
+            GoToNextExampleButton.UseVisualStyleBackColor = true;
+            GoToNextExampleButton.Click += GoToNextExampleButton_Click;
+            // 
             // AddNewEmployeeByManagerForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1340, 741);
+            Controls.Add(GoToNextExampleButton);
             Controls.Add(ErrorsMessageLabel);
             Controls.Add(SuccessMessageLabel);
             Controls.Add(AddNewEmployeeButton);
@@ -395,5 +409,6 @@
         private Button AddNewEmployeeButton;
         private Label SuccessMessageLabel;
         private Label ErrorsMessageLabel;
+        private Button GoToNextExampleButton;
     }
 }

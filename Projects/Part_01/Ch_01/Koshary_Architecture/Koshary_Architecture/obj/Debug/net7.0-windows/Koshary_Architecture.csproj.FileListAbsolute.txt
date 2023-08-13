@@ -56,3 +56,4 @@ E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Arch
 E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\bin\Debug\net7.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\bin\Debug\net7.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\obj\Debug\net7.0-windows\Koshary_Architecture.csproj.CopyComplete
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\obj\Debug\net7.0-windows\Koshary_Architecture.UI_Forms.AddNewEmployeeByManagerForm_2.resources

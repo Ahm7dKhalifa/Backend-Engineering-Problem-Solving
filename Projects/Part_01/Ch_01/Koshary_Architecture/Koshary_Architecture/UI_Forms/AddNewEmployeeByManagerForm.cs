@@ -5,6 +5,7 @@ using System.Net.Mail;
 using System.Net;
 using System.Text.RegularExpressions;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using Koshary_Architecture.UI_Forms;
 
 namespace Koshary_Architecture
 {
@@ -83,7 +84,7 @@ namespace Koshary_Architecture
                 Errors.Add("Phone number is required. ");
             }
 
-            bool isPhoneNumberExist =  SqlServerDatabaseContext
+            bool isPhoneNumberExist = SqlServerDatabaseContext
                                        .Employees
                                        .Where(e => e.PhoneNumber == EmployeePhoneNumberTextBox.Text)
                                        .Any();
@@ -177,6 +178,11 @@ namespace Koshary_Architecture
             ErrorsMessageLabel.Visible = true;
         }
 
+        private void GoToNextExampleButton_Click(object sender, EventArgs e)
+        {
+            AddNewEmployeeByManagerForm_2 next = new AddNewEmployeeByManagerForm_2();
+            next.Show();
+        }
     }
 }
 
