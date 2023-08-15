@@ -48,6 +48,7 @@
             EmployeeBirthDatePickerBox = new DateTimePicker();
             EmployeeNameTextBox = new TextBox();
             SkillsDropDown = new ListBox();
+            GoToNextExampleButton = new Button();
             SuspendLayout();
             // 
             // ErrorsMessageLabel
@@ -223,11 +224,24 @@
             SkillsDropDown.Size = new Size(261, 129);
             SkillsDropDown.TabIndex = 62;
             // 
+            // GoToNextExampleButton
+            // 
+            GoToNextExampleButton.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            GoToNextExampleButton.ForeColor = Color.FromArgb(192, 0, 0);
+            GoToNextExampleButton.Location = new Point(749, 527);
+            GoToNextExampleButton.Name = "GoToNextExampleButton";
+            GoToNextExampleButton.Size = new Size(364, 54);
+            GoToNextExampleButton.TabIndex = 63;
+            GoToNextExampleButton.Text = "Go to Next Example";
+            GoToNextExampleButton.UseVisualStyleBackColor = true;
+            GoToNextExampleButton.Click += GoToNextExampleButton_Click;
+            // 
             // AddNewEmployeeByManagerForm_2
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1232, 735);
+            Controls.Add(GoToNextExampleButton);
             Controls.Add(SkillsDropDown);
             Controls.Add(ErrorsMessageLabel);
             Controls.Add(SuccessMessageLabel);
@@ -276,5 +290,6 @@
         private DateTimePicker EmployeeBirthDatePickerBox;
         private TextBox EmployeeNameTextBox;
         private ListBox SkillsDropDown;
+        private Button GoToNextExampleButton;
     }
 }

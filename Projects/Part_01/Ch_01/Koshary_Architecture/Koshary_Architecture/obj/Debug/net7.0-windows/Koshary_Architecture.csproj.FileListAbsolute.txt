@@ -57,3 +57,17 @@ E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Arch
 E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\bin\Debug\net7.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\obj\Debug\net7.0-windows\Koshary_Architecture.csproj.CopyComplete
 E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\obj\Debug\net7.0-windows\Koshary_Architecture.UI_Forms.AddNewEmployeeByManagerForm_2.resources
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\bin\Debug\net7.0-windows\AWSSDK.Core.dll
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\bin\Debug\net7.0-windows\AWSSDK.SecurityToken.dll
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\bin\Debug\net7.0-windows\DnsClient.dll
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\bin\Debug\net7.0-windows\MongoDB.Bson.dll
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\bin\Debug\net7.0-windows\MongoDB.Driver.dll
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\bin\Debug\net7.0-windows\MongoDB.Driver.Core.dll
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\bin\Debug\net7.0-windows\MongoDB.Libmongocrypt.dll
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\bin\Debug\net7.0-windows\SharpCompress.dll
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\bin\Debug\net7.0-windows\Snappier.dll
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\bin\Debug\net7.0-windows\ZstdSharp.dll
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\bin\Debug\net7.0-windows\runtimes\linux\native\libmongocrypt.so
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\bin\Debug\net7.0-windows\runtimes\osx\native\libmongocrypt.dylib
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\bin\Debug\net7.0-windows\runtimes\win\native\mongocrypt.dll
+E:\My\Github\Backend-Engineering-in-Practice\Projects\Part_01\Ch_01\Koshary_Architecture\Koshary_Architecture\obj\Debug\net7.0-windows\Koshary_Architecture.UI_Forms.AddNewEmployeeByManagerForm_3_MongoDatabaseExample.resources

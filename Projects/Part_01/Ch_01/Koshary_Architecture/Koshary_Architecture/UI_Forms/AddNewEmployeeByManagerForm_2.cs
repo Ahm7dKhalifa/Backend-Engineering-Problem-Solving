@@ -1,4 +1,4 @@
-﻿using Koshary_Architecture.DatabaseContext;
+﻿using Koshary_Architecture.DatabaseContext.EfCoreWithSqlServer;
 using Koshary_Architecture.Models;
 using System;
 using System.Collections.Generic;
@@ -105,7 +105,7 @@ namespace Koshary_Architecture.UI_Forms
             if (SkillsDropDown.SelectedItems.Count <= 0)
             {
                 Errors.Add("Employee should has at least one skill. ");
-                   
+
             }
         }
 
@@ -173,6 +173,12 @@ namespace Koshary_Architecture.UI_Forms
             }
             ErrorsMessageLabel.Text = errorMessage;
             ErrorsMessageLabel.Visible = true;
+        }
+
+        private void GoToNextExampleButton_Click(object sender, EventArgs e)
+        {
+            AddNewEmployeeByManagerForm_3_MongoDatabaseExample next = new AddNewEmployeeByManagerForm_3_MongoDatabaseExample();
+            next.Show();
         }
     }
 }
