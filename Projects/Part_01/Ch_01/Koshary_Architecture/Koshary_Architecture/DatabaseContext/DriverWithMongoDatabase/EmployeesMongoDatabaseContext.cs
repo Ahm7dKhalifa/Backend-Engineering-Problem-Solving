@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Koshary_Architecture.DatabaseContext.DriverWithMongoDatabase
+namespace Koshary_Architecture.DatabaseContext.DriverWithMongoDatabase.Models
 {
     public static class MongoDBSettings
     {

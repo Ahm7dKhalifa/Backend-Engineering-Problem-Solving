@@ -1,6 +1,5 @@
 ﻿using Koshary_Architecture.DatabaseContext.DriverWithMongoDatabase;
-using Koshary_Architecture.DatabaseContext.EfCoreWithSqlServer;
-using Koshary_Architecture.Models;
+using Koshary_Architecture.DatabaseContext.DriverWithMongoDatabase.Models;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -92,7 +91,13 @@ namespace Koshary_Architecture.UI_Forms
                 Errors.Add("Phone number is required. ");
             }
 
-            bool isPhoneNumberExist = false;
+            MongoClient mongoClient = new MongoClient(MongoDBSettings.ConnectionURI);
+            IMongoDatabase mongoDatabase = mongoClient.GetDatabase(MongoDBSettings.DatabaseName);
+            var employeesCollection = mongoDatabase.GetCollection<Employee>(MongoDBSettings.CollectionName);
+
+            bool isPhoneNumberExist = employeesCollection
+                                     .CountDocuments(employee => employee.PhoneNumber == EmployeePhoneNumberTextBox.Text)
+                                     > 0;
 
             if (isPhoneNumberExist)
             {
@@ -134,6 +139,7 @@ namespace Koshary_Architecture.UI_Forms
             MongoClient mongoClient = new MongoClient(MongoDBSettings.ConnectionURI);
             IMongoDatabase mongoDatabase = mongoClient.GetDatabase(MongoDBSettings.DatabaseName);
             var employeesCollection = mongoDatabase.GetCollection<Employee>(MongoDBSettings.CollectionName);
+
             employeesCollection.InsertOne(NewEmployee);
         }
 

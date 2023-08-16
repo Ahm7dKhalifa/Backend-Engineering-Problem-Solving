@@ -1,4 +1,3 @@
-using Koshary_Architecture.Models;
 using System.ComponentModel.DataAnnotations;
 using System.Net.Mail;
 using System.Net;
@@ -6,6 +5,7 @@ using System.Text.RegularExpressions;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using Koshary_Architecture.UI_Forms;
 using Koshary_Architecture.DatabaseContext.EfCoreWithSqlServer;
+using Koshary_Architecture.DatabaseContext.EfCoreWithSqlServer.Models;
 
 namespace Koshary_Architecture
 {

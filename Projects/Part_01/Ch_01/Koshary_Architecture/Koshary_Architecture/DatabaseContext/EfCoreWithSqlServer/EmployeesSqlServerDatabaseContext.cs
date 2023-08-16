@@ -1,4 +1,4 @@
-﻿using Koshary_Architecture.Models;
+﻿using Koshary_Architecture.DatabaseContext.EfCoreWithSqlServer.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic.Devices;
 using System;

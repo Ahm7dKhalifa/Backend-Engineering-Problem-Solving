@@ -1,5 +1,5 @@
 ﻿using Koshary_Architecture.DatabaseContext.EfCoreWithSqlServer;
-using Koshary_Architecture.Models;
+using Koshary_Architecture.DatabaseContext.EfCoreWithSqlServer.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
