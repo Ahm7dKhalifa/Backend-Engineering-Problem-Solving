@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Koshary_Architecture_Web.props" />
+</Project>
