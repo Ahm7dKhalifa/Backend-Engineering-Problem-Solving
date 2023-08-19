@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Koshary_Architecture_Web.props" />
-</Project>
